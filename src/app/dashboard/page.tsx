@@ -108,4 +108,84 @@ export default function DashboardPage() {
               </div>
               <h3 className="text-lg font-semibold">AI Trade Assistant</h3>
             </div>
-            <p className="text-gray-600 dark:text-gray-400 mb-4
+            <p className="text-gray-600 dark:text-gray-400 mb-4">
+              Get expert guidance on tariff optimization, classification strategies, and compliance requirements.
+            </p>
+            <Link 
+              href="/dashboard/chat"
+              className="inline-flex items-center text-primary hover:text-primary/80 font-medium"
+            >
+              Start Conversation →
+            </Link>
+          </div>
+
+          {/* Calculator */}
+          <div className="bg-white dark:bg-gray-800 p-6 rounded-xl border border-gray-200 dark:border-gray-700">
+            <div className="flex items-center mb-4">
+              <div className="w-10 h-10 bg-primary/10 rounded-lg flex items-center justify-center mr-3">
+                <span className="text-primary text-lg">🧮</span>
+              </div>
+              <h3 className="text-lg font-semibold">Landed Cost Calculator</h3>
+            </div>
+            <p className="text-gray-600 dark:text-gray-400 mb-4">
+              Calculate duties, taxes, and total landed costs with optimization recommendations.
+            </p>
+            <Link 
+              href="/dashboard/calculator"
+              className="inline-flex items-center text-primary hover:text-primary/80 font-medium"
+            >
+              Open Calculator →
+            </Link>
+          </div>
+        </div>
+
+        {/* Recent Activity (Demo) */}
+        <div className="mt-8">
+          <h2 className="text-xl font-semibold mb-4">Recent Activity</h2>
+          <div className="bg-white dark:bg-gray-800 rounded-xl border border-gray-200 dark:border-gray-700">
+            <div className="p-6 space-y-4">
+              <div className="flex items-center justify-between py-3 border-b border-gray-100 dark:border-gray-700 last:border-b-0">
+                <div className="flex items-center space-x-3">
+                  <div className="w-8 h-8 bg-green-100 dark:bg-green-900/20 rounded-full flex items-center justify-center">
+                    <span className="text-green-600 text-sm">✓</span>
+                  </div>
+                  <div>
+                    <p className="font-medium">Calculated landed cost for HS 8517.12</p>
+                    <p className="text-sm text-gray-500">CN → US route • Identified $2,400 savings</p>
+                  </div>
+                </div>
+                <span className="text-sm text-gray-500">2 hours ago</span>
+              </div>
+              
+              <div className="flex items-center justify-between py-3 border-b border-gray-100 dark:border-gray-700 last:border-b-0">
+                <div className="flex items-center space-x-3">
+                  <div className="w-8 h-8 bg-blue-100 dark:bg-blue-900/20 rounded-full flex items-center justify-center">
+                    <span className="text-blue-600 text-sm">💬</span>
+                  </div>
+                  <div>
+                    <p className="font-medium">Asked about USMCA qualification requirements</p>
+                    <p className="text-sm text-gray-500">Textile products • Rules of origin guidance</p>
+                  </div>
+                </div>
+                <span className="text-sm text-gray-500">1 day ago</span>
+              </div>
+              
+              <div className="flex items-center justify-between py-3">
+                <div className="flex items-center space-x-3">
+                  <div className="w-8 h-8 bg-purple-100 dark:bg-purple-900/20 rounded-full flex items-center justify-center">
+                    <span className="text-purple-600 text-sm">📄</span>
+                  </div>
+                  <div>
+                    <p className="font-medium">Uploaded commercial invoice for analysis</p>
+                    <p className="text-sm text-gray-500">INV-2024-001.pdf • 2.3 MB</p>
+                  </div>
+                </div>
+                <span className="text-sm text-gray-500">3 days ago</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  )
+}
